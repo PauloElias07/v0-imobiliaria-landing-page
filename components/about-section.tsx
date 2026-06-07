@@ -19,7 +19,7 @@ export function AboutSection() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/images/broker.png"
+                src="/images/Perfil.png"
                 alt="Roberto Elias - Corretor de Imóveis"
                 fill
                 className="object-cover"
