@@ -104,7 +104,7 @@ export function Footer() {
             © 2024 Roberto Elias. Todos os direitos reservados.
           </p>
           <p className="text-primary-foreground/50 text-sm">
-            CRECI: 123456-F
+            CRECI: 289501
           </p>
         </div>
       </div>
