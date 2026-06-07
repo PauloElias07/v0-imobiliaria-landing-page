@@ -7,8 +7,9 @@ const regions = [
   "Saúde",
   "Praça da Árvore",
   "Vila Mariana",
-  "Jabaquara",
+  "Moema",
   "Mirandópolis",
+  "Vila Clementino",
   "Outra região",
 ]
 

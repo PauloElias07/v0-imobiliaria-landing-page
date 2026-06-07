@@ -34,6 +34,12 @@ const neighborhoods = [
     description: "Bairro residencial de classe média alta com ruas arborizadas.",
     highlights: ["Tranquilidade", "Segurança", "Qualidade de vida"],
   },
+  {
+  name: "Vila Clementino",
+  image: "/images/neighborhood-vila_clementino.png",
+  description: "Bairro valorizado da Zona Sul com excelente infraestrutura, mobilidade e qualidade de vida.",
+  highlights: ["Localização estratégica", "Infraestrutura completa", "Mobilidade urbana"],
+},
 ]
 
 const containerVariants = {
