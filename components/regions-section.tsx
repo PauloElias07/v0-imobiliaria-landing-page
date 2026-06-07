@@ -23,10 +23,10 @@ const neighborhoods = [
     highlights: ["MASP próximo", "Parque Ibirapuera", "Vida cultural"],
   },
   {
-    name: "Jabaquara",
+    name: "Moema",
     image: "/images/neighborhood-jabaquara.png",
     description: "Excelente custo-benefício com infraestrutura completa de transporte.",
-    highlights: ["Terminal Rodoviário", "Metrô Jabaquara", "Em valorização"],
+    highlights: ["Parque Ibirapuera", "Metrô Moema", "Em valorização"],
   },
   {
     name: "Mirandópolis",
