@@ -37,7 +37,7 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block text-accent font-medium mb-4 tracking-wider uppercase text-sm">
+            <span className="inline-block text-gold-outline font-medium mb-4 tracking-wider uppercase text-sm">
               Sobre o Corretor
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6 text-balance">
@@ -57,11 +57,11 @@ export function AboutSection() {
 
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="text-center p-4 bg-secondary rounded-xl">
-                <span className="block text-3xl font-bold text-accent mb-1">500+</span>
+                <span className="block text-3xl font-bold text-gold-outline mb-1">500+</span>
                 <span className="text-sm text-muted-foreground">Imóveis Vendidos</span>
               </div>
               <div className="text-center p-4 bg-secondary rounded-xl">
-                <span className="block text-3xl font-bold text-accent mb-1">15+</span>
+                <span className="block text-3xl font-bold text-gold-outline mb-1">15+</span>
                 <span className="text-sm text-muted-foreground">Anos de Experiência</span>
               </div>
             </div>

@@ -63,7 +63,7 @@ export function RegionsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-accent font-medium mb-4 tracking-wider uppercase text-sm">
+          <span className="inline-block text-gold-outline font-medium mb-4 tracking-wider uppercase text-sm">
             Regiões Atendidas
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4 text-balance">

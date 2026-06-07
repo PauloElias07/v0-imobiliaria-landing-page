@@ -15,7 +15,7 @@ export function FinancingSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block text-accent font-medium mb-4 tracking-wider uppercase text-sm">
+            <span className="inline-block text-gold-outline font-medium mb-4 tracking-wider uppercase text-sm">
               Financiamento
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6 text-balance">
@@ -62,19 +62,19 @@ export function FinancingSection() {
             className="grid grid-cols-2 gap-6"
           >
             <div className="bg-card p-8 rounded-2xl shadow-sm">
-              <span className="block text-4xl font-bold text-accent mb-2">420</span>
+              <span className="block text-4xl font-bold text-gold-outline mb-2">420</span>
               <span className="text-muted-foreground">Meses de prazo máximo</span>
             </div>
             <div className="bg-card p-8 rounded-2xl shadow-sm">
-              <span className="block text-4xl font-bold text-accent mb-2">80%</span>
+              <span className="block text-4xl font-bold text-gold-outline mb-2">80%</span>
               <span className="text-muted-foreground">Do valor financiado</span>
             </div>
             <div className="bg-card p-8 rounded-2xl shadow-sm">
-              <span className="block text-4xl font-bold text-accent mb-2">8%</span>
+              <span className="block text-4xl font-bold text-gold-outline mb-2">8%</span>
               <span className="text-muted-foreground">Taxa de juros a partir de</span>
             </div>
             <div className="bg-card p-8 rounded-2xl shadow-sm">
-              <span className="block text-4xl font-bold text-accent mb-2">30</span>
+              <span className="block text-4xl font-bold text-gold-outline mb-2">30</span>
               <span className="text-muted-foreground">Dias para aprovação</span>
             </div>
           </motion.div>

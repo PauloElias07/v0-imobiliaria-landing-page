@@ -27,7 +27,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="inline-block text-accent font-medium mb-4 tracking-wider uppercase text-sm">
+            <span className="inline-block text-gold-outline-light font-medium mb-4 tracking-wider uppercase text-sm">
               Corretor Especializado
             </span>
           </motion.div>

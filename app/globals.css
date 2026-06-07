@@ -59,74 +59,74 @@
   --card-foreground: oklch(0.15 0.02 250);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0.02 250);
-  --primary: oklch(0.25 0.06 250);
+  --primary: oklch(0.38 0.08 250);
   --primary-foreground: oklch(0.98 0 0);
   --secondary: oklch(0.96 0.005 90);
-  --secondary-foreground: oklch(0.25 0.06 250);
+  --secondary-foreground: oklch(0.38 0.08 250);
   --muted: oklch(0.94 0.005 90);
   --muted-foreground: oklch(0.45 0.02 250);
-  --accent: oklch(0.75 0.12 85);
-  --accent-foreground: oklch(0.25 0.06 250);
+  --accent: oklch(0.68 0.18 48);
+  --accent-foreground: oklch(0.38 0.08 250);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.90 0.01 90);
   --input: oklch(0.90 0.01 90);
-  --ring: oklch(0.25 0.06 250);
-  --chart-1: oklch(0.75 0.12 85);
-  --chart-2: oklch(0.25 0.06 250);
+  --ring: oklch(0.38 0.08 250);
+  --chart-1: oklch(0.68 0.18 48);
+  --chart-2: oklch(0.38 0.08 250);
   --chart-3: oklch(0.55 0.08 250);
-  --chart-4: oklch(0.65 0.10 85);
-  --chart-5: oklch(0.35 0.04 250);
+  --chart-4: oklch(0.72 0.16 55);
+  --chart-5: oklch(0.45 0.06 250);
   --radius: 0.625rem;
-  --gold: oklch(0.75 0.12 85);
-  --gold-light: oklch(0.85 0.10 85);
-  --navy: oklch(0.25 0.06 250);
-  --navy-light: oklch(0.35 0.05 250);
+  --gold: oklch(0.68 0.18 48);
+  --gold-light: oklch(0.76 0.16 55);
+  --navy: oklch(0.38 0.08 250);
+  --navy-light: oklch(0.48 0.07 250);
   --sidebar: oklch(0.98 0.005 90);
   --sidebar-foreground: oklch(0.15 0.02 250);
-  --sidebar-primary: oklch(0.25 0.06 250);
+  --sidebar-primary: oklch(0.38 0.08 250);
   --sidebar-primary-foreground: oklch(0.98 0 0);
   --sidebar-accent: oklch(0.94 0.005 90);
-  --sidebar-accent-foreground: oklch(0.25 0.06 250);
+  --sidebar-accent-foreground: oklch(0.38 0.08 250);
   --sidebar-border: oklch(0.90 0.01 90);
-  --sidebar-ring: oklch(0.25 0.06 250);
+  --sidebar-ring: oklch(0.38 0.08 250);
 }
 
 .dark {
-  --background: oklch(0.15 0.02 250);
+  --background: oklch(0.20 0.03 250);
   --foreground: oklch(0.98 0 0);
-  --card: oklch(0.20 0.03 250);
+  --card: oklch(0.26 0.04 250);
   --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.20 0.03 250);
+  --popover: oklch(0.26 0.04 250);
   --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.75 0.12 85);
+  --primary: oklch(0.68 0.18 48);
   --primary-foreground: oklch(0.15 0.02 250);
-  --secondary: oklch(0.25 0.04 250);
+  --secondary: oklch(0.30 0.04 250);
   --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.25 0.04 250);
+  --muted: oklch(0.30 0.04 250);
   --muted-foreground: oklch(0.70 0 0);
-  --accent: oklch(0.75 0.12 85);
+  --accent: oklch(0.68 0.18 48);
   --accent-foreground: oklch(0.15 0.02 250);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.75 0.12 85);
-  --chart-1: oklch(0.75 0.12 85);
+  --ring: oklch(0.68 0.18 48);
+  --chart-1: oklch(0.68 0.18 48);
   --chart-2: oklch(0.55 0.08 250);
   --chart-3: oklch(0.45 0.06 250);
-  --chart-4: oklch(0.65 0.10 85);
-  --chart-5: oklch(0.35 0.04 250);
-  --gold: oklch(0.75 0.12 85);
-  --gold-light: oklch(0.85 0.10 85);
-  --navy: oklch(0.25 0.06 250);
-  --navy-light: oklch(0.35 0.05 250);
-  --sidebar: oklch(0.20 0.03 250);
+  --chart-4: oklch(0.72 0.16 55);
+  --chart-5: oklch(0.45 0.06 250);
+  --gold: oklch(0.68 0.18 48);
+  --gold-light: oklch(0.76 0.16 55);
+  --navy: oklch(0.38 0.08 250);
+  --navy-light: oklch(0.48 0.07 250);
+  --sidebar: oklch(0.26 0.04 250);
   --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.75 0.12 85);
+  --sidebar-primary: oklch(0.68 0.18 48);
   --sidebar-primary-foreground: oklch(0.15 0.02 250);
-  --sidebar-accent: oklch(0.25 0.04 250);
+  --sidebar-accent: oklch(0.30 0.04 250);
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.75 0.12 85);
+  --sidebar-ring: oklch(0.68 0.18 48);
 }
 
 @layer base {
@@ -138,5 +138,20 @@
   }
   html {
     @apply font-sans scroll-smooth;
+  }
+}
+
+@layer utilities {
+  /* Texto laranja com contorno sutil para melhorar a legibilidade em textos simples */
+  .text-gold-outline {
+    color: var(--gold);
+    -webkit-text-stroke: 0.4px oklch(0.30 0.06 250 / 0.55);
+    paint-order: stroke fill;
+  }
+  /* Variante com contorno claro para uso sobre fundos escuros (navy) */
+  .text-gold-outline-light {
+    color: var(--gold);
+    -webkit-text-stroke: 0.4px oklch(1 0 0 / 0.35);
+    paint-order: stroke fill;
   }
 }
