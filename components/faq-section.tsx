@@ -40,7 +40,7 @@ export function FAQSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block text-accent font-medium mb-4 tracking-wider uppercase text-sm">
+            <span className="inline-block text-gold-outline font-medium mb-4 tracking-wider uppercase text-sm">
               FAQ
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6 text-balance">
@@ -54,7 +54,7 @@ export function FAQSection() {
               href="https://wa.me/5511988649386?text=Olá! Tenho uma dúvida sobre compra de imóveis."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-accent font-semibold hover:underline"
+              className="inline-flex items-center gap-2 text-gold-outline font-semibold hover:underline"
             >
               Ainda tem dúvidas? Fale comigo
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

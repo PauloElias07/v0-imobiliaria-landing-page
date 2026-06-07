@@ -61,7 +61,7 @@ export function PropertiesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-accent font-medium mb-4 tracking-wider uppercase text-sm">
+          <span className="inline-block text-gold-outline font-medium mb-4 tracking-wider uppercase text-sm">
             Imóveis em Destaque
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4 text-balance">
@@ -114,7 +114,7 @@ export function PropertiesSection() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-accent font-bold">{property.price}</span>
+                  <span className="text-gold-outline font-bold">{property.price}</span>
                 </div>
                 <Link
                   href={`https://wa.me/5511988649386?text=Olá! Tenho interesse no imóvel ${property.name} em ${property.neighborhood}`}
@@ -141,7 +141,7 @@ export function PropertiesSection() {
             href="https://wa.me/5511988649386?text=Olá! Gostaria de ver mais opções de imóveis."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-accent font-semibold hover:underline"
+            className="inline-flex items-center gap-2 text-gold-outline font-semibold hover:underline"
           >
             Ver todos os imóveis disponíveis
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
