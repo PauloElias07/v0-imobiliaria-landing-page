@@ -61,12 +61,27 @@ export function AboutSection() {
 
             <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="text-center p-4 bg-secondary rounded-xl">
-                <span className="block text-3xl font-bold text-gold-outline mb-1">500+</span>
-                <span className="text-sm text-muted-foreground">Imóveis Vendidos</span>
-              </div>
-              <div className="text-center p-4 bg-secondary rounded-xl">
-                <span className="block text-3xl font-bold text-gold-outline mb-1">15+</span>
-                <span className="text-sm text-muted-foreground">Anos de Experiência</span>
+               <span className="block text-3xl font-bold text-zinc-800 mb-1">
+  Atendimento
+</span>
+
+<span className="block text-3xl font-bold text-zinc-600 mb-1">
+  Personalizado
+</span>
+</div>
+
+<div className="text-center p-4 bg-secondary rounded-xl">
+  <span className="block text-3xl font-bold text-zinc-800 mb-1">
+    Corretor
+  </span>
+
+  <span className="block text-3xl font-bold text-emerald-700 mb-1">
+    Tarjab
+  </span>
+
+  <span className="text-sm text-muted-foreground"></span>
+
+  <span className="text-sm text-muted-foreground"></span>
               </div>
             </div>
 
