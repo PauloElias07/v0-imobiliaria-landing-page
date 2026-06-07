@@ -5,7 +5,6 @@ import { RegionsSection } from "@/components/regions-section"
 import { PropertiesSection } from "@/components/properties-section"
 import { BenefitsSection } from "@/components/benefits-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { FinancingSection } from "@/components/financing-section"
 import { FAQSection } from "@/components/faq-section"
 import { ContactForm } from "@/components/contact-form"
 import { Footer } from "@/components/footer"
@@ -21,7 +20,6 @@ export default function Home() {
       <PropertiesSection />
       <BenefitsSection />
       <TestimonialsSection />
-      <FinancingSection />
       <FAQSection />
       <ContactForm />
       <Footer />

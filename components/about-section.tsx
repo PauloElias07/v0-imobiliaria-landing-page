@@ -44,15 +44,19 @@ export function AboutSection() {
               Roberto Elias
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Com anos de experiência no mercado imobiliário de São Paulo, sou especializado em 
-              apartamentos nas regiões mais valorizadas da zona sul. Meu compromisso é oferecer 
-              um atendimento personalizado, entendendo suas necessidades e encontrando o imóvel 
-              perfeito para você e sua família.
+              Roberto Elias atua no mercado imobiliário com foco em atendimento personalizado,
+              auxiliando clientes na busca pelo apartamento ideal de acordo com seu perfil,
+              necessidades e objetivos. Em parceria com a construtora Tarjab, oferece acesso a
+              excelentes oportunidades e empreendimentos diferenciados em São Paulo.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Além da atuação como corretor, também é advogado especializado em Direito do
+              Consumidor, proporcionando mais segurança, transparência e confiança durante todas as
+              etapas da negociação e documentação do imóvel.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Desde a busca pelo imóvel ideal até a conclusão da documentação, acompanho cada 
-              etapa do processo com dedicação e transparência, garantindo uma experiência de 
-              compra tranquila e segura.
+              Com acompanhamento próximo e suporte completo do início ao fim, garante uma
+              experiência de compra mais tranquila, segura e eficiente.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-8">
