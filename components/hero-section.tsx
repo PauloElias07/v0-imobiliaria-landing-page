@@ -38,8 +38,17 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6 text-balance"
           >
-            Encontre o apartamento ideal em São Paulo
+            Corretor Especializado em Apartamentos de Alto Padrão
           </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-xl md:text-2xl font-serif text-white/95 mb-6 text-balance"
+          >
+            Encontre o apartamento ideal nas melhores regiões de São Paulo
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -47,8 +56,11 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-2xl"
           >
-            Especialista em imóveis nas regiões da Saúde, Praça da Árvore e Vila Mariana. 
-            Atendimento personalizado para encontrar seu novo lar.
+            Roberto Elias é especialista em imóveis residenciais nas regiões da Saúde, Praça da
+            Árvore, Vila Mariana, Moema, Nova Klabin, Santa Cruz, Mirandópolis e arredores da Zona
+            Sul de São Paulo. Atuando em parceria com a construtora Tarjab, oferece acesso a
+            excelentes oportunidades, empreendimentos diferenciados e atendimento personalizado para
+            ajudar você a encontrar o imóvel ideal com segurança, transparência e praticidade.
           </motion.p>
 
           <motion.div

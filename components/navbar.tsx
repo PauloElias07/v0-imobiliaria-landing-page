@@ -34,14 +34,16 @@ export function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-card/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+          : "bg-card/70 backdrop-blur-sm"
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="#inicio" className="flex items-center gap-2">
-            <span className="text-2xl font-serif font-bold text-primary">
-              Roberto Elias
+            <span className="text-2xl font-serif font-bold">
+              <span className="text-primary">Porta </span>
+              <span className="text-accent">Certa</span>
+              <span className="text-primary"> Consultoria</span>
             </span>
           </Link>
 
