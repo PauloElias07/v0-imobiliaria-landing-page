@@ -43,25 +43,37 @@ export function Navbar() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* LOGO */}
-          <Link href="#inicio" className="flex items-center gap-3">
-            <div className="relative w-11 h-11 shrink-0">
-              <Image
-                src="/images/logo.png"
-                alt="Logo Porta Certa"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
+          <button
+  onClick={() => {
+    const section = document.getElementById("inicio")
 
-            <span className="text-xl md:text-2xl font-serif font-bold leading-tight">
-              <span className="text-primary">Porta </span>
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  }}
+  className="flex items-center gap-3"
+>
+  <div className="relative w-11 h-11 shrink-0">
+    <Image
+      src="/images/logo.png"
+      alt="Logo Porta Certa"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
 
-              <span className="text-accent">Certa</span>
+  <span className="text-xl md:text-2xl font-serif font-bold leading-tight">
+    <span className="text-primary">Porta </span>
 
-              <span className="text-primary"> Consultoria</span>
-            </span>
-          </Link>
+    <span className="text-accent">Certa</span>
+
+    <span className="text-primary"> Consultoria</span>
+  </span>
+</button>
 
           {/* DESKTOP NAVIGATION */}
           <div className="hidden lg:flex items-center gap-8">
