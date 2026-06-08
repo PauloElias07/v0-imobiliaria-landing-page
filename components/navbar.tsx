@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 
 const navLinks = [
   { href: "#inicio", label: "Início" },
@@ -22,7 +23,9 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
+
     window.addEventListener("scroll", handleScroll)
+
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -39,15 +42,28 @@ export function Navbar() {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="#inicio" className="flex items-center gap-2">
-            <span className="text-2xl font-serif font-bold">
+          {/* LOGO */}
+          <Link href="#inicio" className="flex items-center gap-3">
+            <div className="relative w-11 h-11 shrink-0">
+              <Image
+                src="/images/logo.png"
+                alt="Logo Porta Certa"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+
+            <span className="text-xl md:text-2xl font-serif font-bold leading-tight">
               <span className="text-primary">Porta </span>
+
               <span className="text-accent">Certa</span>
+
               <span className="text-primary"> Consultoria</span>
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* DESKTOP NAVIGATION */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -58,6 +74,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+
             <Link
               href="https://wa.me/5511988649386"
               target="_blank"
@@ -68,7 +85,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* MOBILE MENU BUTTON */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2"
@@ -80,11 +97,13 @@ export function Navbar() {
                   isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
                 }`}
               />
+
               <span
                 className={`w-full h-0.5 bg-foreground transition-all duration-300 ${
                   isMobileMenuOpen ? "opacity-0" : ""
                 }`}
               />
+
               <span
                 className={`w-full h-0.5 bg-foreground transition-all duration-300 ${
                   isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
@@ -95,7 +114,7 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -115,6 +134,7 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+
               <Link
                 href="https://wa.me/5511988649386"
                 target="_blank"
