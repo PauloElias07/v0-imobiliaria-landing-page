@@ -152,7 +152,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © 2026 Roberto Elias. Todos os direitos reservados.
+            © 2026 Porta Certa Consultoria Imobiliária LTDA. Todos os direitos reservados.
           </p>
 
           <p className="text-primary-foreground/50 text-sm">
