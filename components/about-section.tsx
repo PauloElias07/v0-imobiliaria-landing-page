@@ -52,12 +52,12 @@ export function AboutSection() {
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Em parceria com a construtora Tarjab, oferece acesso a empreendimentos exclusivos
+              Em parceria com a Construtora Tarjab, oferece acesso a empreendimentos exclusivos
               e oportunidades diferenciadas nas melhores regiões de São Paulo.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-              Também é advogado especializado em Direito do Consumidor, trazendo mais segurança
+              Também é Advogado especializado em Direito do Consumidor, trazendo mais segurança
               e transparência para cada negociação.
             </p>
 
