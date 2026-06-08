@@ -49,7 +49,7 @@ export function Footer() {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/share/1E56C7KBAn/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -156,7 +156,7 @@ export function Footer() {
           </p>
 
           <p className="text-primary-foreground/50 text-sm">
-            CRECI: 289501
+            CRECI: 289501-F
           </p>
         </div>
       </div>
