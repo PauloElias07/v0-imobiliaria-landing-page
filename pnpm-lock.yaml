@@ -26,6 +26,9 @@ importers:
       lucide-react:
         specifier: ^1.16.0
         version: 1.17.0(react@19.2.4)
+      mongobd:
+        specifier: 0.0.1-security.0
+        version: 0.0.1-security.0
       next:
         specifier: 16.2.6
         version: 16.2.6(@babel/core@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -1516,6 +1519,9 @@ packages:
 
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+
+  mongobd@0.0.1-security.0:
+    resolution: {integrity: sha512-dsz5Ebvq99wMFAd+b0A40Er/PHNPa9aa5+nlr3QNcAXnd9g3FWVCFKd5TXyWgLafOboVBgShxp/K/CTb8zerhQ==}
 
   motion-dom@12.40.0:
     resolution: {integrity: sha512-HxU3ZaBwNPVQUBQf1xxgq+7JrPNZvjLVxgbpEZL7RrWJnsxOf0/OM+yrHG9ogLQ31Do/r57Oz2gQWPK+6q62mg==}
@@ -3332,6 +3338,8 @@ snapshots:
       brace-expansion: 5.0.6
 
   minimist@1.2.8: {}
+
+  mongobd@0.0.1-security.0: {}
 
   motion-dom@12.40.0:
     dependencies:
