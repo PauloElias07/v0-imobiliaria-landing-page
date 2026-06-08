@@ -15,7 +15,7 @@ const properties = [
     area: "72 a 93 m²",
     price: "R$ 852.000 - R$ 1.380.000",
     image: "/images/altus.png",
-    video: "https://youtube.com/shorts/XpTWGPeNIX4?si=zC4EWI6_3OTYk7pQ",
+    video: "https://www.youtube.com/embed/XpTWGPeNIX4",
   },
 
   {
@@ -27,7 +27,7 @@ const properties = [
     area: "32 a 172 m²",
     price: "R$ 540.000 - R$ 3.400.000",
     image: "/images/riserva.png",
-    video: "https://youtube.com/shorts/EaycLCVoD4M?si=b42G0_m84M0sAq2q",
+    video: "https://www.youtube.com/embed/EaycLCVoD4M",
   },
 
   {
@@ -39,7 +39,7 @@ const properties = [
     area: "46 a 91 m²",
     price: "R$ 740.000 - R$ 1.380.000",
     image: "/images/vila-ares.png",
-    video: "https://youtube.com/shorts/14syZFP7nxQ?si=E05x2IRPQAlp_MHh",
+    video: "https://www.youtube.com/embed/14syZFP7nxQ",
   },
 
   {
@@ -51,7 +51,7 @@ const properties = [
     area: "35 a 128 m²",
     price: "R$ 520.000 - R$ 2.240.000",
     image: "/images/viccino.png",
-    video: "https://youtube.com/shorts/PH1IqA3H2t8?si=q_IChnmVwWj7Hlyp",
+    video: "https://www.youtube.com/embed/PH1IqA3H2t8",
   },
 
   {
@@ -63,7 +63,7 @@ const properties = [
     area: "33 a 74 m²",
     price: "R$ 500.000 - R$ 1.310.000",
     image: "/images/criare.png",
-    video: "https://youtube.com/shorts/zROUdpJXD0o?si=QeMVJkW6rblJsZcH",
+    video: "https://www.youtube.com/embed/zROUdpJXD0o",
   },
 ]
 
@@ -153,7 +153,7 @@ export function PropertiesSection() {
                   {property.address}
                 </p>
 
-                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-5">
+                <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-5">
                   <div className="flex items-center gap-1">
                     <BedroomIcon />
                     <span>{property.bedrooms} quartos</span>
@@ -210,7 +210,7 @@ export function PropertiesSection() {
           className="text-center mt-12"
         >
           <Link
-            href="https://wa.me/5511988649386?text=Olá! Gostaria de ver mais opções de imóveis."
+            href="https://wa.me/5511988649386?text=Olá! Gostaria de encontrar o imóvel ideal para mim."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-gold-outline font-semibold hover:underline"
@@ -241,7 +241,7 @@ export function PropertiesSection() {
             {/* CLOSE BUTTON */}
             <button
               onClick={() => setSelectedVideo(null)}
-              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white text-black text-xl font-bold hover:scale-105 transition-transform"
+              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white text-black text-2xl font-bold flex items-center justify-center hover:scale-105 transition-transform"
             >
               ×
             </button>
