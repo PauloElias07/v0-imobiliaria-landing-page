@@ -1,16 +1,33 @@
 import { MongoClient } from "mongodb"
 
-const uri = process.env.MONGODB_URI!
+if (!process.env.MONGODB_URI) {
+  throw new Error("Por favor, adicione a variável MONGODB_URI no arquivo .env.local")
+}
 
-const client = new MongoClient(uri)
+const uri = process.env.MONGODB_URI
 
-let isConnected = false
+let client: MongoClient
+let clientPromise: Promise<MongoClient>
 
-export async function connectDB() {
-  if (!isConnected) {
-    await client.connect()
-    isConnected = true
+if (process.env.NODE_ENV === "development") {
+  // Em desenvolvimento, usa uma variável global para manter a conexão entre os recarregamentos de código (Fast Refresh)
+  let globalWithMongo = global as typeof globalThis & {
+    _mongoClientPromise?: Promise<MongoClient>
   }
 
-  return client.db("portacerta")
+  if (!globalWithMongo._mongoClientPromise) {
+    client = new MongoClient(uri)
+    globalWithMongo._mongoClientPromise = client.connect()
+  }
+  clientPromise = globalWithMongo._mongoClientPromise
+} else {
+  // Em produção, é seguro criar uma nova conexão
+  client = new MongoClient(uri)
+  clientPromise = client.connect()
+}
+
+export async function connectDB() {
+  const connectedClient = await clientPromise
+  // Retorna diretamente o banco de dados especificado ("portacerta")
+  return connectedClient.db("portacerta")
 }
