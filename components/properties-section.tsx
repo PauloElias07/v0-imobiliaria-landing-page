@@ -15,7 +15,7 @@ const properties = [
     area: "72 a 93 m²",
     price: "R$ 852.000 - R$ 1.380.000",
     image: "/images/altus.png",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    video: "https://youtube.com/shorts/XpTWGPeNIX4?si=zC4EWI6_3OTYk7pQ",
   },
 
   {
@@ -27,7 +27,7 @@ const properties = [
     area: "32 a 172 m²",
     price: "R$ 540.000 - R$ 3.400.000",
     image: "/images/riserva.png",
-    video: "https://www.youtube.com/embed/jNQXAC9IVRw",
+    video: "https://youtube.com/shorts/EaycLCVoD4M?si=b42G0_m84M0sAq2q",
   },
 
   {
@@ -39,7 +39,7 @@ const properties = [
     area: "46 a 91 m²",
     price: "R$ 740.000 - R$ 1.380.000",
     image: "/images/vila-ares.png",
-    video: "https://www.youtube.com/embed/ysz5S6PUM-U",
+    video: "https://youtube.com/shorts/14syZFP7nxQ?si=E05x2IRPQAlp_MHh",
   },
 
   {
@@ -51,7 +51,7 @@ const properties = [
     area: "35 a 128 m²",
     price: "R$ 520.000 - R$ 2.240.000",
     image: "/images/viccino.png",
-    video: "https://www.youtube.com/embed/tgbNymZ7vqY",
+    video: "https://youtube.com/shorts/PH1IqA3H2t8?si=q_IChnmVwWj7Hlyp",
   },
 
   {
@@ -63,7 +63,7 @@ const properties = [
     area: "33 a 74 m²",
     price: "R$ 500.000 - R$ 1.310.000",
     image: "/images/criare.png",
-    video: "https://www.youtube.com/embed/ScMzIvxBSi4",
+    video: "https://youtube.com/shorts/zROUdpJXD0o?si=QeMVJkW6rblJsZcH",
   },
 ]
 
