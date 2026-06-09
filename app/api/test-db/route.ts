@@ -5,6 +5,8 @@ export async function GET() {
   try {
     const db = await connectDB()
     
+    await db.collection("chaves_acesso").insertOne({ token: "porta123", usada: false, criadaEm: new Date() })
+
     // Executa um comando de "ping" no MongoDB Atlas
     await db.command({ ping: 1 })
     
