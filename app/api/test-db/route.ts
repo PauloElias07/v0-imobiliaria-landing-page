@@ -1,31 +1,26 @@
 import { NextResponse } from "next/server"
 import { connectDB } from "@/lib/mongodb"
 
-export async function POST(request: Request) {
+export async function GET() {
   try {
-    const body = await request.json()
-    const { token, nome, texto, avaliacao } = body
-
     const db = await connectDB()
-
-    // 1. Salva o depoimento enviado pelo cliente
-    await db.collection("depoimentos").insertOne({
-      nome,
-      texto,
-      avaliacao,
-      tokenOrigem: token,
-      criadoEm: new Date()
+    
+    // Injeta a chave de acesso simulada ou real
+    await db.collection("chaves_acesso").insertOne({ 
+      token: "porta123", 
+      usada: false, 
+      criadoEm: new Date() 
     })
 
-    // 2. Marca a chave de acesso como usada para que ninguém mais use o mesmo link
-    await db.collection("chaves_acesso").updateOne(
-      { token: token },
-      { $set: { usada: true, usadoEm: new Date() } }
-    )
-
-    return NextResponse.json({ success: true, message: "Depoimento salvo com sucesso!" })
+    return NextResponse.json({ 
+      status: "Sucesso!", 
+      message: "Sistema pronto! A chave 'porta123' foi disponibilizada para o teste." 
+    })
   } catch (error: any) {
-    console.error("Erro na API de criação:", error)
-    return NextResponse.json({ error: "Erro interno ao salvar depoimento." }, { status: 500 })
+    return NextResponse.json({ 
+      status: "Erro", 
+      message: "Erro interno na rota de testes.",
+      details: error.message 
+    }, { status: 500 })
   }
 }
