@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { connectDB } from "@/lib/mongodb"
+import { connectDB } from "@/lib/supabase"
 
 // ⚡ Força o Next.js a rodar essa rota do zero a cada requisição (Desativa o Cache)
 export const dynamic = "force-dynamic"
