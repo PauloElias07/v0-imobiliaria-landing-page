@@ -1,30 +1,31 @@
 import { NextResponse } from "next/server"
 import { connectDB } from "@/lib/mongodb"
 
-export async function GET() {
+export async function POST(request: Request) {
   try {
+    const body = await request.json()
+    const { token, nome, texto, avaliacao } = body
+
     const db = await connectDB()
-    
-    // Injeta a chave de acesso para o nosso teste do formulário
-    await db.collection("chaves_acesso").insertOne({ 
-      token: "porta123", 
-      usada: false, 
-      criadaEm: new Date() 
+
+    // 1. Salva o depoimento enviado pelo cliente
+    await db.collection("depoimentos").insertOne({
+      nome,
+      texto,
+      avaliacao,
+      tokenOrigem: token,
+      criadoEm: new Date()
     })
 
-    // Executa o comando de ping para checar se a conexão com o Atlas está viva
-    await db.command({ ping: 1 })
-    
-    return NextResponse.json({ 
-      status: "Sucesso!", 
-      message: "Conexão estabelecida e chave 'porta123' criada com sucesso!" 
-    })
+    // 2. Marca a chave de acesso como usada para que ninguém mais use o mesmo link
+    await db.collection("chaves_acesso").updateOne(
+      { token: token },
+      { $set: { usada: true, usadoEm: new Date() } }
+    )
+
+    return NextResponse.json({ success: true, message: "Depoimento salvo com sucesso!" })
   } catch (error: any) {
-    console.error("Erro ao conectar no banco:", error)
-    return NextResponse.json({ 
-      status: "Erro", 
-      message: "Não foi possível conectar ao banco de dados.",
-      details: error.message 
-    }, { status: 500 })
+    console.error("Erro na API de criação:", error)
+    return NextResponse.json({ error: "Erro interno ao salvar depoimento." }, { status: 500 })
   }
 }
