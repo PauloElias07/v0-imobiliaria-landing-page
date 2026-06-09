@@ -5,18 +5,22 @@ export async function GET() {
   try {
     const db = await connectDB()
     
-    await db.collection("chaves_acesso").insertOne({ token: "porta123", usada: false, criadaEm: new Date() })
+    // Injeta a chave de acesso para o nosso teste do formulário
+    await db.collection("chaves_acesso").insertOne({ 
+      token: "porta123", 
+      usada: false, 
+      criadaEm: new Date() 
+    })
 
-    // Executa um comando de "ping" no MongoDB Atlas
+    // Executa o comando de ping para checar se a conexão com o Atlas está viva
     await db.command({ ping: 1 })
     
     return NextResponse.json({ 
       status: "Sucesso!", 
-      message: "Conexão com o MongoDB 'portacerta' estabelecida com sucesso!" 
+      message: "Conexão estabelecida e chave 'porta123' criada com sucesso!" 
     })
   } catch (error: any) {
     console.error("Erro ao conectar no banco:", error)
-    
     return NextResponse.json({ 
       status: "Erro", 
       message: "Não foi possível conectar ao banco de dados.",
