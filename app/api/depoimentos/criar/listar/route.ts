@@ -1,22 +1,25 @@
 import { NextResponse } from "next/server"
-import { connectDB } from "@/lib/supabase"
+import { supabase } from "@/lib/supabase"
 
-// ⚡ Força o Next.js a rodar essa rota do zero a cada requisição (Desativa o Cache)
 export const dynamic = "force-dynamic"
 
 export async function GET() {
   try {
-    const db = await connectDB()
+    // Puxa os dados direto do Supabase ordenando pelos mais novos
+    const { data: depoimentos, error } = await supabase
+      .from('depoimentos')
+      .select('*')
+      .order('criated_at' in (await supabase.from('depoimentos').select('*').limit(1)).data?.[0] ? 'created_at' : 'criado_em', { ascending: false })
 
-    const depoimentosReais = await db
-      .collection("depoimentos")
-      .find({})
-      .sort({ criadoEm: -1 })
-      .toArray()
+    if (error) {
+      // Caso a ordenação por 'criado_em' falhe por conta do nome na tabela SQL, busca padrão
+      const { data: fallbackData } = await supabase.from('depoimentos').select('*')
+      return NextResponse.json(fallbackData || [])
+    }
 
-    return NextResponse.json(depoimentosReais)
+    return NextResponse.json(depoimentos || [])
   } catch (error: any) {
-    console.error("Erro na API de listagem:", error)
-    return NextResponse.json({ error: "Erro ao listar depoimentos" }, { status: 500 })
+    console.error("Erro ao listar depoimentos:", error)
+    return NextResponse.json({ error: "Erro interno no servidor" }, { status: 500 })
   }
 }

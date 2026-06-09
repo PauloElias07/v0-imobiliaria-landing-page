@@ -1,31 +1,28 @@
 import { NextResponse } from "next/server"
-import { connectDB } from "@/lib/supabase"
+import { supabase } from "@/lib/supabase"
 
 export async function POST(request: Request) {
   try {
     const body = await request.json()
     const { token, nome, texto, avaliacao } = body
 
-    const db = await connectDB()
+    // Salva direto na tabela do Supabase
+    const { error } = await supabase
+      .from('depoimentos')
+      .insert([
+        { 
+          nome, 
+          texto, 
+          avaliacao: Number(avaliacao) || 5, 
+          token_origem: token 
+        }
+      ])
 
-    // 1. Salva o depoimento enviado pelo cliente
-    await db.collection("depoimentos").insertOne({
-      nome,
-      texto,
-      avaliacao,
-      tokenOrigem: token,
-      criadoEm: new Date()
-    })
+    if (error) throw error
 
-    // 2. Marca a chave de acesso como usada para que ninguém mais use o mesmo link
-    await db.collection("chaves_acesso").updateOne(
-      { token: token },
-      { $set: { usada: true, usadoEm: new Date() } }
-    )
-
-    return NextResponse.json({ success: true, message: "Depoimento salvo com sucesso!" })
+    return NextResponse.json({ success: true, message: "Salvo no Supabase!" })
   } catch (error: any) {
-    console.error("Erro na API de criação:", error)
-    return NextResponse.json({ error: "Erro interno ao salvar depoimento." }, { status: 500 })
+    console.error("Erro ao criar depoimento:", error)
+    return NextResponse.json({ error: error.message }, { status: 500 })
   }
 }
