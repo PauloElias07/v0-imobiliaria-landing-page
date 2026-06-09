@@ -43,7 +43,7 @@ export default function PaginaDepoimento({ searchParams }: PageProps) {
 
     try {
       // Dispara a requisição para a rota da API (app/api/depoimentos/criar/route.ts)
-      const response = await fetch("app/api/test-db/depoimentos/criar/", {
+      const response = await fetch("/api/depoimentos/criar/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
