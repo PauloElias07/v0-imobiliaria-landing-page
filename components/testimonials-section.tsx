@@ -2,9 +2,10 @@
 
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react"
 
-const testimonials = [
+// Seus depoimentos atuais servem como "reserva" se o banco estiver vazio
+const fallbackTestimonials = [
   {
     name: "Maria Clara Santos",
     location: "Vila Mariana",
@@ -31,26 +32,84 @@ const testimonials = [
   },
 ]
 
+interface Depoimento {
+  name: string
+  location: string
+  text: string
+  rating: number
+}
+
 export function TestimonialsSection() {
+  const [testimonials, setTestimonials] = useState<Depoimento[]>([])
   const [activeIndex, setActiveIndex] = useState(0)
+  const [loading, setLoading] = useState(true)
+
+  // 1. Busca os depoimentos do MongoDB Atlas
+  useEffect(() => {
+    async function fetchTestimonials() {
+      try {
+        const response = await fetch("/api/depoimentos/listar")
+        if (response.ok) {
+          const data = await response.json()
+          
+          // Mapeia os dados do banco para bater exatamente com as suas variáveis visuais
+          if (data && data.length > 0) {
+            const formatted = data.map((item: any) => ({
+              name: item.nome,
+              location: "Cliente Verificado", // Como o form não pede localização, padronizamos aqui
+              text: item.texto,
+              rating: item.avaliacao || 5,
+            }))
+            setTestimonials(formatted)
+          } else {
+            // Se o banco estiver zerado, usa a sua lista padrão
+            setTestimonials(fallbackTestimonials)
+          }
+        } else {
+          setTestimonials(fallbackTestimonials)
+        }
+      } catch (error) {
+        console.error("Erro ao carregar depoimentos do banco:", error)
+        setTestimonials(fallbackTestimonials)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchTestimonials()
+  }, [])
 
   const nextTestimonial = () => {
+    if (testimonials.length === 0) return
     setActiveIndex((prev) => (prev + 1) % testimonials.length)
   }
 
   const prevTestimonial = () => {
+    if (testimonials.length === 0) return
     setActiveIndex((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
     )
   }
 
+  // 2. Efeito de rotação automática do carrossel (apenas ativa após carregar os dados)
   useEffect(() => {
+    if (loading || testimonials.length <= 1) return
+
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % testimonials.length)
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [loading, testimonials])
+
+  // Estado visual de transição suave enquanto bate na API
+  if (loading) {
+    return (
+      <section id="depoimentos" className="py-24 bg-background flex items-center justify-center">
+        <Loader2 className="h-8 w-8 animate-spin text-accent" />
+      </section>
+    )
+  }
 
   return (
     <section id="depoimentos" className="py-24 bg-background">
@@ -72,7 +131,7 @@ export function TestimonialsSection() {
           </h2>
 
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A satisfação dos meus clientes é minha maior conquista.
+            A satisfaction dos meus clientes é minha maior conquista.
           </p>
         </motion.div>
 
