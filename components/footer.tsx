@@ -49,7 +49,7 @@ export function Footer() {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/share/1E56C7KBAn/"
+                href="https://www.facebook.com/1100494193158382?ref=PROFILE_EDIT_xav_ig_profile_page_web"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
