@@ -12,7 +12,7 @@ const BANNERS = [
     badge: "Corretor Especializado • Tarjab",
     title: "Apartamentos Tarjab nas Melhores Regiões de São Paulo",
     subtitle: "Mirandópolis, Moema, Nova Klabin, Praça da Árvore, Saúde, Vila Clementino e Vila Mariana.",
-    description: "Atendimento personalizado com Roberto Elias para encontrar o apartmento ideal com segurança, praticidade e excelentes oportunidades imobiliárias.",
+    description: "Atendimento personalizado com Roberto Elias para encontrar o apartamento ideal com segurança, praticidade e excelentes oportunidades imobiliárias.",
     image: "/images/hero-apartment.png",
     primaryBtnText: "Falar no WhatsApp",
     primaryBtnLink: "https://wa.me/5511988649386?text=Olá%20Roberto,%20gostaria%20de%20saber%20mais%20sobre%20os%20apartamentos", 

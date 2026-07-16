@@ -343,7 +343,7 @@ const properties: PropertyItem[] = [
             category: "Salão de Festas",
             title: "Salão de Festas Elegante",
             description: "Infraestrutura de alto padrão e decorada para receber seus convidados em datas especiais.",
-            image: "/images/lazer/riserva/bosque/salaofestas.png"
+            image: "/images/lazer/riserva/bosque/salaoFestas.png"
           }
         ]
       },
@@ -397,7 +397,7 @@ const properties: PropertyItem[] = [
             category: "Salão de Festas",
             title: "Salão de Festas Integrado",
             description: "Espaço acolhedor e otimizado para celebrar conquistas com seus amigos próximos.",
-            image: "/images/lazer/riserva/horizonte/salaofestas.png"
+            image: "/images/lazer/riserva/horizonte/salaoFestas.png"
           },
           {
             category: "Lounge",
@@ -467,109 +467,109 @@ const properties: PropertyItem[] = [
         category: "Academia",
         title: "Academia Equipada",
         description: "Espaço fitness completo com aparelhos modernos para manter sua rotina de treinos em dia na Saúde.",
-        image: "/images/lazer/vilaares/academia.png"
+        image: "/images/lazer/vilaAres/academia.png"
       },
       {
         category: "Salão de Festas",
         title: "Apoio do Salão de Festas",
         description: "Estrutura de apoio completa para receber seus convidados com praticidade em grandes celebrações.",
-        image: "/images/lazer/vilaares/apoioSalaoFestas.png"
+        image: "/images/lazer/vilaAres/apoioSalaoFestas.png"
       },
       {
         category: "Brinquedoteca",
         title: "Brinquedoteca Lúdica",
         description: "Área planejada especialmente para o desenvolvimento, segurança e criatividade das crianças.",
-        image: "/images/lazer/vilaares/brinquedoteca.png"
+        image: "/images/lazer/vilaAres/brinquedoteca.png"
       },
       {
         category: "Coworking",
         title: "Espaço Coworking",
         description: "Estações de trabalho modernas e confortáveis para o seu home office com total foco e tranquilidade.",
-        image: "/images/lazer/vilaares/coWorking.png"
+        image: "/images/lazer/vilaAres/coWorking.png"
       },
       {
         category: "Delivery",
         title: "Espaço Delivery",
         description: "Espaço dedicado e seguro para receber e armazenar suas encomendas e compras com total praticidade.",
-        image: "/images/lazer/vilaares/espacoDelivery.png"
+        image: "/images/lazer/vilaAres/espacoDelivery.png"
       },
       {
         category: "Gourmet",
         title: "Espaço Gourmet & Churrasqueira",
         description: "Ambiente sofisticado e equipado para preparar jantares especiais e churrascos com amigos e família.",
-        image: "/images/lazer/vilaares/espacoGourmetChurrasqueira.png"
+        image: "/images/lazer/vilaAres/espacoGourmetChurrasqueira.png"
       },
       {
         category: "Hall",
         title: "Hall de Entrada",
         description: "Um espaço imponente e acolhedor, projetado para receber seus convidados com elegância e requinte.",
-        image: "/images/lazer/vilaares/hall.png"
+        image: "/images/lazer/vilaAres/hall.png"
       },
       {
         category: "Hall",
         title: "Hall de Entrada - Torre 2",
         description: "Recepção elegante e exclusiva para os moradores da segunda torre do empreendimento.",
-        image: "/images/lazer/vilaares/hall_Torre2.png"
+        image: "/images/lazer/vilaAres/hall_Torre2.png"
       },
       {
         category: "Lounge",
         title: "Lounge de Convivência",
         description: "Um refúgio confortável e moderno para relaxar, ler um bom livro ou conversar com vizinhos.",
-        image: "/images/lazer/vilaares/lounge.png"
+        image: "/images/lazer/vilaAres/lounge.png"
       },
       {
         category: "Pet Place",
         title: "Pet Place",
         description: "Área reservada e segura ao ar livre para o seu pet jogar, correr e se exercitar.",
-        image: "/images/lazer/vilaares/petPlace.png"
+        image: "/images/lazer/vilaAres/petPlace.png"
       },
       {
         category: "Pet Place",
         title: "Pet Place - Torre 2",
         description: "Segundo espaço dedicado ao lazer e bem-estar do seu pet, próximo à segunda torre.",
-        image: "/images/lazer/vilaares/Petplace2.png"
+        image: "/images/lazer/vilaAres/Petplace2.png"
       },
       {
         category: "Piscina",
         title: "Piscina Climatizada",
         description: "Um mergulho refrescante ou momentos de relaxamento em um deck integrado com projeto paisagístico refinado.",
-        image: "/images/lazer/vilaares/piscina.png"
+        image: "/images/lazer/vilaAres/piscina.png"
       },
       {
         category: "Playground",
         title: "Playground Infantil",
         description: "Área externa repleta de brinquedos para as crianças se divertirem ao ar livre com segurança.",
-        image: "/images/lazer/vilaares/playground.png"
+        image: "/images/lazer/vilaAres/playground.png"
       },
       {
         category: "Quadra",
         title: "Quadra Poliesportiva",
         description: "O espaço ideal para a prática de esportes e atividades físicas sem precisar sair de casa.",
-        image: "/images/lazer/vilaares/quadra.png"
+        image: "/images/lazer/vilaAres/quadra.png"
       },
       {
         category: "Bem-estar",
         title: "Sala de Massagem",
         description: "Um ambiente relaxante, silencioso e planejado para renovar as energias e aliviar o estresse do cotidiano.",
-        image: "/images/lazer/vilaares/salaMassagem.png"
+        image: "/images/lazer/vilaAres/salaMassagem.png"
       },
       {
         category: "Salão de Festas",
         title: "Salão de Festas Elegante",
         description: "Estrutura premium totalmente decorada e planejada para celebrar grandes conquistas e datas especiais.",
-        image: "/images/lazer/vilaares/salaoFestas.png"
+        image: "/images/lazer/vilaAres/salaoFestas.png"
       },
       {
         category: "Salão de Festas",
         title: "Salão de Festas - Torre 2",
         description: "Segundo salão de festas, exclusivo para os moradores da segunda torre celebrarem com conforto.",
-        image: "/images/lazer/vilaares/salaoFestas_Torre2.png"
+        image: "/images/lazer/vilaAres/salaoFestas_Torre2.png"
       },
       {
         category: "Jogos",
         title: "Salão de Jogos",
         description: "Diversão e entretenimento garantidos em um ambiente jovem, dinâmico e interativo.",
-        image: "/images/lazer/vilaares/salaoJogos.png"
+        image: "/images/lazer/vilaAres/salaoJogos.png"
       }
     ]
   },

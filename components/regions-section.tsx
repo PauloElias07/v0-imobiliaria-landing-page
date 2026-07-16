@@ -24,7 +24,7 @@ const neighborhoods = [
   },
   {
     name: "Moema",
-    image: "/images/neighborhood-jabaquara.png",
+    image: "/images/neighborhood-moema.png",
     description: "Excelente custo-benefício com infraestrutura completa de transporte.",
     highlights: ["Parque Ibirapuera", "Metrô Moema", "Em valorização"],
   },
