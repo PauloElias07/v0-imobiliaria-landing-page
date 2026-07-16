@@ -27,7 +27,7 @@ const neighborhoods = [
     image: "/images/neighborhood-moema.png",
     description: "Excelente custo-benefício com infraestrutura completa de transporte.",
     highlights: ["Parque Ibirapuera", "Metrô Moema", "Em valorização"],
-  },
+  },    
   {
     name: "Mirandópolis",
     image: "/images/neighborhood-mirandopolis.png",
