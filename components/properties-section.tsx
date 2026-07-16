@@ -101,7 +101,7 @@ const properties: PropertyItem[] = [
         category: "Salão de Festas",
         title: "Salão de Festas Elegante",
         description: "Estrutura premium totalmente decorada e planejada para celebrar grandes conquistas e datas especiais.",
-        image: "/images/lazer/altus/salaofestas.png"
+        image: "/images/lazer/altus/salaoFestas.png"
       },
       {
         category: "Lounge",
@@ -717,7 +717,7 @@ const properties: PropertyItem[] = [
         image: "/images/lazer/criare/areaDelivery.png"
       },
       {
-        category: "Academia",
+        category: "Área Fitness",
         title: "Área Fitness Externa",
         description: "Espaço ao ar livre planejado para exercícios funcionais, alongamentos e treinos dinâmicos.",
         image: "/images/lazer/criare/areaFitnessExterna.png"
@@ -774,7 +774,7 @@ const properties: PropertyItem[] = [
         category: "Salão de Festas",
         title: "Salão de Festas",
         description: "Ambiente sofisticado e bem decorado, perfeito para celebrar suas grandes conquistas e receber convidados na Saúde.",
-        image: "/images/lazer/criare/salaofestas.png"
+        image: "/images/lazer/criare/salaoFestas.png"
       },
       {
         category: "Estúdio de vídeo maker",
@@ -887,7 +887,7 @@ const properties: PropertyItem[] = [
           },
           {
             category: "Churrasqueira",
-            title: "Terraço com Churrasqueira",
+            title: "Área com Churrasqueira",
             description: "Área externa agradável dedicada a momentos descontraídos de confraternização com amigos e família.",
             image: "/images/lazer/eucalys/lirio/terracoComChurrasqueira.png"
           }
@@ -1400,7 +1400,7 @@ export function PropertiesSection() {
         )}
       </AnimatePresence>
 
-      {/* MODAL DE ÁREAS DE LAZER (AMENITIES) — agora com suporte a lazer por torre */}
+{/* MODAL DE ÁREAS DE LAZER (AMENITIES) — agora com suporte a lazer por torre */}
       <AnimatePresence>
         {selectedPropertyAmenities && currentAmenities.length > 0 && (
           <motion.div 
@@ -1470,7 +1470,7 @@ export function PropertiesSection() {
                 </div>
 
                 {/* Imagem do Lazer Ativo */}
-                <div className="relative aspect-[16/10] bg-muted rounded-xl overflow-hidden border border-muted mb-4 flex-shrink-0">
+                <div className="relative aspect-[16/10] bg-muted rounded-xl overflow-hidden border border-muted mb-2 flex-shrink-0">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={`${activeAmenityTowerIndex}-${activeAmenityIndex}`}
@@ -1489,7 +1489,13 @@ export function PropertiesSection() {
                       />
                     </motion.div>
                   </AnimatePresence>
+
                 </div>
+
+              {/* Nota de rodapé técnica da imagem */}
+              <p className="text-[10px] text-muted-foreground/60 italic mb-4">
+                * Perspectiva ilustrativa. Detalhes e acabamentos podem sofrer alterações.
+              </p>
 
                 {/* Descritivo da Área de Lazer Ativa */}
                 <div className="mb-6 flex-shrink-0">
