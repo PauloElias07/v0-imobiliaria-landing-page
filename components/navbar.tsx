@@ -10,7 +10,7 @@ const navLinks = [
   { href: "#sobre", label: "Sobre" },
   { href: "#regioes", label: "Regiões" },
   { href: "#imoveis", label: "Imóveis" },
-  { href: "#financiamento", label: "Simulacao" },
+  { href: "#financiamento", label: "Simulação" },
   { href: "#beneficios", label: "Benefícios" },
   { href: "#depoimentos", label: "Depoimentos" },
   { href: "#contato", label: "Contato" },
