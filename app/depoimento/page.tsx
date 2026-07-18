@@ -18,6 +18,7 @@ export default function PaginaDepoimento({ searchParams }: PageProps) {
   const [texto, setTexto] = useState("")
   const [avaliacao, setAvaliacao] = useState(5)
   const [imovel, setImovel] = useState("") // 💻 Novo estado para armazenar o imóvel selecionado!
+  const [aceitaTermos, setAceitaTermos] = useState(false) // 🔒 Novo estado para a autorização de exibição
   const [enviando, setEnviando] = useState(false)
   const [sucesso, setSucesso] = useState(false)
   const [erro, setErro] = useState("")
@@ -44,6 +45,11 @@ export default function PaginaDepoimento({ searchParams }: PageProps) {
       return
     }
 
+    if (!aceitaTermos) {
+      setErro("Você precisa autorizar a exibição do seu depoimento para continuar.")
+      return
+    }
+
     setEnviando(true)
     setErro("")
 
@@ -57,7 +63,8 @@ export default function PaginaDepoimento({ searchParams }: PageProps) {
           nome: nomeCliente,
           texto,
           avaliacao,
-          imovel // 💻 Enviando o imóvel escolhido para o banco de dados
+          imovel, // 💻 Enviando o imóvel escolhido para o banco de dados
+          aceitaTermos // Se sua API precisar registrar o consentimento, já vai aqui
         })
       })
 
@@ -217,6 +224,21 @@ export default function PaginaDepoimento({ searchParams }: PageProps) {
                   onChange={(e) => setTexto(e.target.value)}
                   className="w-full rounded-lg border border-slate-200 p-3 shadow-sm focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 text-slate-800"
                 />
+              </div>
+
+              {/* Checkbox de Autorização Obrigatória */}
+              <div className="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 p-4">
+                <input
+                  id="aceita-termos"
+                  type="checkbox"
+                  checked={aceitaTermos}
+                  onChange={(e) => setAceitaTermos(e.target.checked)}
+                  required
+                  className="mt-1 h-4 w-4 rounded border-slate-300 text-orange-500 focus:ring-orange-500 accent-orange-500"
+                />
+                <label htmlFor="aceita-termos" className="text-sm leading-relaxed text-slate-600 select-none cursor-pointer">
+                  Eu concordo e <span className="font-semibold text-slate-700">autorizo a exibição</span> deste depoimento, do meu nome e da minha nota no site principal.
+                </label>
               </div>
 
               {/* Mensagens de Feedback de Erro */}
