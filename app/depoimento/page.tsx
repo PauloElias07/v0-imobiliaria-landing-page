@@ -209,6 +209,9 @@ export default function PaginaDepoimento({ searchParams }: PageProps) {
                   <option value="Viccino">Viccino</option>
                   <option value="Vila Ares">Vila Ares</option>
                   <option value="Criare">Criare</option>
+                  <option value="Isla">Isla</option>
+                  <option value="Signatur">Signatur</option>
+                  <option value="Eucalys">Eucalys</option>
                 </select>
               </div>
 
