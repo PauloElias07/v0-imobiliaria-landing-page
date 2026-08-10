@@ -1,33 +1,118 @@
-# v0-imobiliaria-landing-page
+# 🏠 Landing Page Imobiliária
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Landing page desenvolvida para um corretor de imóveis, com foco na apresentação profissional, divulgação de empreendimentos e geração de leads.
 
-## Built with v0
+O projeto utiliza **Next.js**, **React** e **TypeScript**, com interface responsiva e integração com uma API própria para gerenciamento de depoimentos de clientes.
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## 🚀 Funcionalidades
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_DokUGDKVxvrzhJsINtdAcvXVv4di)
+* 🏢 Apresentação do corretor e seus serviços
+* 🏠 Exibição de empreendimentos imobiliários
+* 📱 Interface responsiva para diferentes dispositivos
+* ⭐ Exibição de depoimentos de clientes
+* 🔗 Geração de links individuais para coleta de depoimentos
+* 🔐 Chaves de acesso únicas com controle de utilização
+* ⚙️ Painel administrativo para geração de novos links
+* 🔄 Integração entre frontend, API e banco de dados
 
-## Getting Started
+## 🛠️ Tecnologias
 
-First, run the development server:
+### Frontend
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **HTML5**
+* **CSS**
+
+### Backend e Banco de Dados
+
+* **Node.js**
+* **API REST**
+* **MongoDB**
+
+### Ferramentas
+
+* **Git**
+* **GitHub**
+* **pnpm**
+* **v0**
+
+## 🔗 Arquitetura
+
+O sistema realiza a comunicação entre a interface, a API e o banco de dados:
+
+```text
+Landing Page / Painel Administrativo
+              │
+              ▼
+           API REST
+              │
+              ▼
+           MongoDB
+              │
+       ┌──────┴──────┐
+       ▼             ▼
+Chaves únicas   Depoimentos
+```
+
+O corretor possui acesso a um painel administrativo onde pode gerar novos links de depoimento.
+
+Cada link recebe uma **chave única**, armazenada no MongoDB. Após o cliente acessar o link e enviar seu depoimento, a chave é invalidada, impedindo sua reutilização.
+
+## 💡 Principais aprendizados
+
+Durante o desenvolvimento, foram aplicados conhecimentos de:
+
+* Desenvolvimento de aplicações web
+* Desenvolvimento e integração de APIs REST
+* Comunicação entre frontend e backend
+* Persistência de dados com MongoDB
+* Criação de regras de negócio
+* Geração e validação de chaves únicas
+* Controle de utilização de links
+* Desenvolvimento de painel administrativo
+* Desenvolvimento de interfaces responsivas
+
+## ⚙️ Como executar
+
+### Pré-requisitos
+
+* Node.js
+* pnpm
+
+### Instalação
+
+Clone o repositório:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/SEU-USUARIO/v0-imobiliaria-landing-page.git
+```
+
+Entre na pasta:
+
+```bash
+cd v0-imobiliaria-landing-page
+```
+
+Instale as dependências:
+
+```bash
+pnpm install
+```
+
+Execute o servidor de desenvolvimento:
+
+```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-## Learn More
+## 📌 Status
 
-To learn more, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+**Concluído e em evolução.**
