@@ -9,13 +9,13 @@ import Link from "next/link"
 const BANNERS = [
   {
     id: 1,
-    badge: "Corretor Especializado • Tarjab",
-    title: "Apartamentos Tarjab nas Melhores Regiões de São Paulo",
-    subtitle: "Mirandópolis, Moema, Nova Klabin, Praça da Árvore, Saúde, Vila Clementino e Vila Mariana.",
-    description: "Atendimento personalizado com Roberto Elias para encontrar o apartamento ideal com segurança, praticidade e excelentes oportunidades imobiliárias.",
+    badge: "Vivaz Residencial • Minha Casa Minha Vida",
+    title: "Apartamentos Acessíveis nas Melhores Regiões de SP",
+    subtitle: "Realize o sonho da casa própria em localizações centralizadas e privilegiadas.",
+    description: "Opções sob medida pelo programa Minha Casa Minha Vida com subsídios, facilidade de entrada e o suporte especializado de Roberto Elias.",
     image: "/images/hero-apartment.png",
     primaryBtnText: "Falar no WhatsApp",
-    primaryBtnLink: "https://wa.me/5511988649386?text=Olá%20Roberto,%20gostaria%20de%20saber%20mais%20sobre%20os%20apartamentos", 
+    primaryBtnLink: "https://wa.me/5511988649386?text=Olá%20Roberto,%20gostaria%20de%20saber%20mais%20sobre%20os%20apartamentos%20Vivaz", 
     secondaryBtnText: "Ver imóveis disponíveis",
     secondaryBtnLink: "#imoveis",
     showWhatsAppIcon: true,
@@ -25,29 +25,29 @@ const BANNERS = [
   },
   {
     id: 2,
-    badge: "Oportunidade Exclusiva", 
-    title: <>Mude para o Altus a partir de<span className="inline-block text-accent font-mono font-black text-5xl md:text-6xl lg:text-7xl my-3 tracking-tight border-2 border-accent bg-accent/10 px-4 py-2 rounded-2xl shadow-lg shadow-accent/20">R$ 9.999/m²</span></>, 
-    subtitle: "O menor preço por metro quadrado da região.", 
-    description: "Uma condição especial imperdível para você garantir seu Tarjab com alto padrão de qualidade. Condições de pagamento facilitadas.", 
+    badge: "Oportunidade Imperdível", 
+    title: <>Conquiste seu imóvel com as facilidades do <span className="inline-block text-accent font-mono font-black text-3xl md:text-5xl my-3 tracking-tight border-2 border-accent bg-accent/10 px-4 py-2 rounded-2xl shadow-lg shadow-accent/20">Minha Casa Minha Vida</span></>, 
+    subtitle: "Apartamentos bem localizados que cabem no seu bolso.", 
+    description: "Entrada facilitada, subsídios do governo e condições especiais para você sair do aluguel e morar perto de tudo.", 
     image: "/images/postAltusPromo.png", 
-    primaryBtnText: "Quero Saber Mais",
-    primaryBtnLink: "https://wa.me/5511988649386?text=Quero%20saber%20mais%20sobre%20o%20Altus!",
-    secondaryBtnText: "Ver Detalhes do Altus",
+    primaryBtnText: "Quero Simular Agora",
+    primaryBtnLink: "https://wa.me/5511988649386?text=Olá%20Roberto,%20quero%20fazer%20uma%20simulação%20pelo%20Minha%20Casa%20Minha%20Vida!",
+    secondaryBtnText: "Ver Empreendimentos",
     secondaryBtnLink: "#imoveis",
     showWhatsAppIcon: false,
     showArrowIcon: true,
     hasOverlay: true,
-    overlayClass: "from-primary/70 via-primary/40 to-transparent" 
+    overlayClass: "from-primary/80 via-primary/50 to-transparent" 
   },
   {
     id: 3,
-    badge: "Atendimento Direto",
+    badge: "Atendimento Direto com Especialista",
     title: "A Oportunidade Perfeita para Mudar de Vida",
-    subtitle: "Condições especiais de negociação direto com quem entende.",
-    description: "Não deixe seu próximo passo para depois. Clique abaixo e fale agora mesmo com o corretor especialista para receber uma proposta personalizada.",
+    subtitle: "Condições exclusivas na Vivaz Residencial direto com quem entende.",
+    description: "Saia do aluguel e viva centralizado em São Paulo. Fale agora mesmo com o consultor para fazer uma simulação sem compromisso.",
     image: "/images/image3_carro1.png", 
     primaryBtnText: "Falar com o Corretor",
-    primaryBtnLink: "https://wa.me/5511988649386?text=Olá%20Roberto,%20gostaria%20de%20falar%20sobre%20as%20oportunidades",
+    primaryBtnLink: "https://wa.me/5511988649386?text=Olá%20Roberto,%20gostaria%20de%20falar%20sobre%20as%20oportunidades%20da%20Vivaz",
     secondaryBtnText: "Tire suas dúvidas",
     secondaryBtnLink: "#contato",
     showWhatsAppIcon: true,
@@ -118,7 +118,6 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="container mx-auto px-6 relative z-20 pt-24 pb-28 min-h-screen flex flex-col justify-center">
-        {/* Ajustado o posicionamento mobile removendo o mt-auto agressivo do Banner 2 */}
         <div className={`max-w-3xl w-full flex flex-col ${
           currentBanner.id === 2 
             ? "justify-center sm:my-auto md:mb-1 md:mr-auto md:items-start md:text-left" 
@@ -161,7 +160,7 @@ export function HeroSection() {
                 </p>
               )}
 
-              {/* CORREÇÃO CRÍTICA: Renderização unificada dos botões dentro do fluxo do texto */}
+              {/* Botões */}
               <div className={`flex flex-col sm:flex-row gap-4 w-full sm:w-auto ${
                 currentBanner.id === 2 ? "mb-2 pb-6 md:pb-0" : "mb-6"
               }`}>
@@ -190,7 +189,7 @@ export function HeroSection() {
             </motion.div>
           </AnimatePresence>
 
-          {/* Telefone exposto apenas nos banners comuns */}
+          {/* Telefone */}
           {currentBanner.id !== 2 && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -205,7 +204,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Controles Visuais do Carrossel (Dots) */}
+      {/* Carrossel Dots */}
       <div className="absolute bottom-6 right-6 md:right-12 z-30 flex gap-2">
         {BANNERS.map((_, index) => (
           <button

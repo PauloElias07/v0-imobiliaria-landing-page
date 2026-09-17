@@ -52,7 +52,7 @@ export function AboutSection() {
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Em parceria com a Construtora Tarjab, oferece acesso a empreendimentos exclusivos
+              Em parceria com a Construtora Vivaz Residencial, oferece acesso a empreendimentos exclusivos
               e oportunidades diferenciadas nas melhores regiões de São Paulo.
             </p>
 
@@ -64,47 +64,47 @@ export function AboutSection() {
             {/* CARDS */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
 
-           {/* CARD DE DEPOIMENTOS E PROVA SOCIAL */}
-<a 
-  href="#depoimentos"
-  onClick={(e) => {
-    e.preventDefault();
-    document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' });
-  }}
-  className="group relative block overflow-hidden rounded-2xl bg-gradient-to-br from-primary/95 via-primary/80 to-primary/75 p-5 text-white shadow-xl border border-white/10 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl cursor-pointer"
->
-  <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
+              {/* CARD DE DEPOIMENTOS E PROVA SOCIAL */}
+              <a 
+                href="#depoimentos"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="group relative block overflow-hidden rounded-2xl bg-gradient-to-br from-primary/95 via-primary/80 to-primary/75 p-5 text-white shadow-xl border border-white/10 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl cursor-pointer"
+              >
+                <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
 
-  <div className="flex items-center justify-between mb-3">
-    <span className="text-[10px] uppercase tracking-[0.2em] bg-white/10 px-2.5 py-1 rounded-full text-accent font-bold">
-      Depoimentos Reais
-    </span>
-    <svg className="w-4 h-4 text-white/50 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-    </svg>
-  </div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[10px] uppercase tracking-[0.2em] bg-white/10 px-2.5 py-1 rounded-full text-accent font-bold">
+                    Depoimentos Reais
+                  </span>
+                  <svg className="w-4 h-4 text-white/50 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
 
-  <h3 className="text-2xl font-black mb-1.5 tracking-tight">
-    Avaliação Máxima (5/5)
-  </h3>
+                <h3 className="text-2xl font-black mb-1.5 tracking-tight">
+                  Avaliação Máxima (5/5)
+                </h3>
 
-  <p className="text-white/80 text-sm leading-relaxed mb-4">
-    100% de aprovação dos clientes que realizaram o sonho do imóvel próprio com o suporte do Roberto Elias.
-  </p>
+                <p className="text-white/80 text-sm leading-relaxed mb-4">
+                  100% de aprovação dos clientes que realizaram o sonho do imóvel próprio com o suporte do Roberto Elias.
+                </p>
 
-  <div className="flex items-center justify-between pt-3 border-t border-white/10 mt-auto">
-    <div className="flex text-amber-400 gap-0.5">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} className="w-4 h-4 fill-current drop-shadow-[0_2px_4px_rgba(245,158,11,0.4)]" viewBox="0 0 20 20">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-    <span className="text-xs text-white/70 font-semibold group-hover:underline">
-      Ler Depoimentos →
-    </span>
-  </div>
-</a>
+                <div className="flex items-center justify-between pt-3 border-t border-white/10 mt-auto">
+                  <div className="flex text-amber-400 gap-0.5">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current drop-shadow-[0_2px_4px_rgba(245,158,11,0.4)]" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-xs text-white/70 font-semibold group-hover:underline">
+                    Ler Depoimentos →
+                  </span>
+                </div>
+              </a>
 
               {/* INSTAGRAM CARD */}
               <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-accent/15 via-white to-primary/5 p-6 border border-accent/20 shadow-md text-foreground">
@@ -130,7 +130,7 @@ export function AboutSection() {
                 </p>
 
                 <Link
-                  href="https://www.instagram.com/robertoelias_corretortarjab/"
+                  href="https://www.instagram.com/robertoelias_corretorvivaz/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-xl font-semibold hover:bg-primary/90 hover:scale-105 transition-all duration-200"

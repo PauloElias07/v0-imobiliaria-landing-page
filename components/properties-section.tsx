@@ -50,7 +50,7 @@ const properties: PropertyItem[] = [
     address: "Rua Visconde de Guaratiba, nº 105",
     bedrooms: "2 a 3",
     area: "72 a 93 m²",
-    price: "R$ 859.000 - R$ 1.367.000",
+    price: "",
     image: "/images/altus.png",
     video: "https://www.youtube.com/embed/XpTWGPeNIX4",
     plans: [
@@ -166,7 +166,7 @@ const properties: PropertyItem[] = [
   "address": "Rua Samia Haddad, nº 94",
   "bedrooms": "1 a 2",
   "area": "33 a 51 m²",
-  "price": "R$ 300.000 - R$ 572.000",
+  "price": "",
   "image": "/images/isla.png",
   "video": "https://www.youtube.com/embed/k4GM36T941o",
   "plans": [
@@ -258,7 +258,7 @@ const properties: PropertyItem[] = [
     address: "Av. Dr. Altino Arantes, nº 222",
     bedrooms: "1 a 4",
     area: "31 a 172 m²",
-    price: "R$ 543.000 - R$ 3.438.000",
+    price: "",
     image: "/images/riserva.png",
     video: "https://www.youtube.com/embed/EaycLCVoD4M",
     towers: [
@@ -417,7 +417,7 @@ const properties: PropertyItem[] = [
     address: "Rua dos Alcatrazes, nº 37",
     bedrooms: "1 a 3",
     area: "46 a 91 m²",
-    price: "R$ 747.000 - R$ 1.380.000",
+    price: "",
     image: "/images/vila-ares.png",
     video: "https://www.youtube.com/embed/14syZFP7nxQ",
     towers: [
@@ -580,7 +580,7 @@ const properties: PropertyItem[] = [
     address: "Av. Senador Casemiro da Rocha, nº 683",
     bedrooms: "1 a 3",
     area: "35 a 128 m²",
-    price: "R$ 523.000 - R$ 2.262.000",
+    price: "",
     image: "/images/viccino.png",
     video: "https://www.youtube.com/embed/PH1IqA3H2t8",
     towers: [
@@ -688,7 +688,7 @@ const properties: PropertyItem[] = [
     address: "Rua Guarujá, nº 94",
     bedrooms: "1 a 3",
     area: "33 a 74 m²",
-    price: "R$ 502.000 - R$ 1.322.000",
+    price: "",
     image: "/images/criare.png",
     video: "https://www.youtube.com/embed/zROUdpJXD0o",
     plans: [
@@ -792,7 +792,7 @@ const properties: PropertyItem[] = [
     address: "Av. dos Carinás, nº 333",
     bedrooms: "1 a 3",
     area: "33 a 74 m²",
-    price: "R$ 606.000 - R$ 3.210.000",
+    price: "",
     image: "/images/eucalys.png",
     video: "https://www.youtube.com/embed/zROUdpJXD0o",
     towers: [
@@ -935,7 +935,7 @@ const properties: PropertyItem[] = [
     address: "Rua Ibituruna, nº 298",
     bedrooms: "2 e 3",
     area: "74 a 109 m²",
-    price: "R$ 968.000 - R$ 1.600.000",
+    price: "",
     image: "/images/signatur.png",
     video: "https://www.youtube.com/embed/zROUdpJXD0o",
     plans: [
